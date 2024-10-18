@@ -1,4 +1,7 @@
 from huggingface_hub import snapshot_download
+import os
 
-model_id = "llava-hf/llama3-llava-next-8b-hf"
+print(os.getenv("HF_HOME"))
+
+model_id = "allenai/Molmo-7B-D-0924"
 snapshot_download(model_id)
